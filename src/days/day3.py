@@ -2,10 +2,10 @@ class Day3:
 
     banks: list[str] = []
 
-    def parsePuzzleInput(self, input_data: list[str]):
+    def parsePuzzleInput(self, input_data: list[str]) -> None:
         self.banks = input_data
 
-    def partOne(self):
+    def partOne(self) -> None:
         joltage = 0
 
         for batteries in self.banks:
@@ -25,7 +25,7 @@ class Day3:
 
         print("Part One - Largest 2 Battery Bank Joltage:", joltage)
 
-    def partTwo(self):
+    def partTwo(self) -> None:
         joltage = 0
 
         for batteries in self.banks:

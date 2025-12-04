@@ -1,13 +1,15 @@
 class Day1:
 
-    def parsePuzzleInput(self, input_data: list[str]):
-        pass
+    input_data: list[str] = []
 
-    def partOne(self, input_data):
+    def parsePuzzleInput(self, input_data: list[str]):
+        self.input_data = input_data
+
+    def partOne(self) -> None:
         starting_value = 50
         counter = 0
 
-        for line in input_data:
+        for line in self.input_data:
             direction = line[0]
             turns = int(line[1:])
 
@@ -22,11 +24,11 @@ class Day1:
 
         print("Part One - Times at Zero:", counter)
 
-    def partTwo(self, input_data):
+    def partTwo(self) -> None:
         starting_value = 50
         counter = 0
 
-        for line in input_data:
+        for line in self.input_data:
             direction = line[0]
             turns = int(line[1:])
 

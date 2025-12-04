@@ -1,4 +1,3 @@
-from collections import Counter
 import re
 
 
@@ -6,13 +5,13 @@ class Day2:
 
     ranges: list[Range] = []
 
-    def parsePuzzleInput(self, input_data: list[str]):
+    def parsePuzzleInput(self, input_data: list[str]) -> None:
         ran = input_data[0].split(",")
         for r in ran:
             parts = r.split("-")
             self.ranges.append(Range(int(parts[0]), int(parts[1])))
 
-    def partOne(self):
+    def partOne(self) -> None:
         invalids = 0
 
         for r in self.ranges:
@@ -27,7 +26,7 @@ class Day2:
 
         print("Part One - Number of One Repeats:", invalids)
 
-    def partTwo(self):
+    def partTwo(self) -> None:
         invalids = 0
 
         for r in self.ranges:
