@@ -1,10 +1,10 @@
-from days.day3 import Day3
+from days.day4 import Day4
 
 
 def main():
-    day = Day3()
-    # file_path = "./puzzles/day3_example.txt"
-    file_path = "./puzzles/day3_puzzle.txt"
+    day = Day4()
+    # file_path = "./puzzles/day4_example.txt"
+    file_path = "./puzzles/day4_puzzle.txt"
     input_data = []
     with open(file_path, "r") as file:
         for lines in file:
