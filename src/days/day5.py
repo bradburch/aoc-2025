@@ -34,6 +34,7 @@ class Day5:
             for begin, end in self.union_ranges:
                 if id >= begin and id <= end:
                     fresh += 1
+                    break
 
         print("Part One - Fresh Produce:", fresh)
 
